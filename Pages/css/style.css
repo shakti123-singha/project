@@ -1,0 +1,185 @@
+.navbar-nav,
+.d-flex {
+  list-style-type: none;
+  padding-left: 0;
+  /* Remove left padding */
+}
+
+.naw {
+  color: rgb(36, 201, 44) !important;
+}
+
+.costom {
+  width: 100%;
+  height: 500px;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+.navbar .navbar-nav .nav-link {
+  margin-right: 30px;
+  padding: 25px 0;
+  color: rgb(241, 23, 23);
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active:hover {
+  color: rgb(36, 201, 44) !important;
+}
+/* ---------------------------------------------- */
+
+
+#portfolio-flters li {
+  display: inline-block;
+  font-weight: 500;
+  /* color: var(--dark); */
+  color: black;
+  cursor: pointer;
+  transition: .5s;
+  border-bottom: 2px solid transparent;
+}
+
+#portfolio-flters li:hover,
+#portfolio-flters li.active {
+  /* color: var(--primary);
+  border-color: var(--primary); */
+  color: blue;
+  border-color: #9B9B9B;
+}
+
+.portfolio-img {
+  position: relative;
+}
+
+.portfolio-img::before,
+.portfolio-img::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  /* background: var(--dark); */
+  background-color: black;
+  transition: .5s;
+}
+
+.portfolio-img::before {
+  left: 50%;
+}
+
+.portfolio-img::after {
+  right: 50%;
+}
+
+.portfolio-item:hover .portfolio-img::before {
+  width: 51%;
+  left: 0;
+}
+
+.portfolio-item:hover .portfolio-img::after {
+  width: 51%;
+  right: 0;
+}
+
+.portfolio-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: 1;
+  transition: .5s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  transition-delay: .3s;
+}
+.head{
+  max-width: 600px;
+  
+}
+
+
+
+/* --------------------------------------footer css */
+element.style {
+  visibility: visible;
+  animation-delay: 0.1s;
+  animation-name: fadeIn;
+}
+
+.bg-dark {
+  background-color: #1A2A36 !important;
+}
+
+.text-body {
+  color: #9B9B9B !important;
+}
+
+.pt-5 {
+  padding-top: 3rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, .75rem);
+  padding-left: var(--bs-gutter-x, .75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #9B9B9B;
+  background-color: #fff;
+
+}
+
+root {
+  --primary: #32C36C;
+  --light: #F6F7F8;
+  --dark: #1A2A36;
+  visibility: visible;
+  animation-delay: 0.1s;
+  animation-name: fadeIn;
+}
