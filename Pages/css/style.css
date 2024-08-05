@@ -162,12 +162,13 @@ element.style {
   box-sizing: border-box;
 }
 
+/* 
 div {
   display: block;
   unicode-bidi: isolate;
-}
+} */
 
-body {
+/* body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -176,7 +177,7 @@ body {
   color: #9B9B9B;
   background-color: #fff;
 
-}
+} */
 
 root {
   --primary: #32C36C;
